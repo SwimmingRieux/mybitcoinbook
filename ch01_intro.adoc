@@ -217,7 +217,7 @@ connecting to the Bitcoin network directly. The wallet may be stored by
 the user or by third-party servers, but the client trusts the remote
 server to provide it with accurate information and protect its ((("wallets", "types of", startref="wallet-type")))privacy.
 
-[NOTE_FOR_ME]
+[Tip]
 ====
 Bitcoin ((("Bitcoin", "as peer-to-peer network", secondary-sortas="peer-to-peer network")))((("peer-to-peer networks, Bitcoin as")))((("peers")))((("clients")))is a peer-to-peer (P2P) network.  Full nodes are the _peers:_
 each peer individually validates every confirmed transaction and can

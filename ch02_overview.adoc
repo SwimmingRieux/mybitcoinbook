@@ -425,7 +425,7 @@ to another program (such as a block explorer) that will relay it to a
 node.  Her Bitcoin wallet does not have
 to be connected to Bob's Bitcoin wallet directly and she does not have
 to use the internet connection offered by Bob, though both those
-options are possible too. Any Bitcoin node that receives a
+options are possible too. noteforme: Any Bitcoin node that receives a
 valid transaction it has not seen before will forward it to
 all other nodes to which it is connected, a propagation technique known
 ((("gossiping")))as _gossiping_. Thus, the transaction rapidly propagates out across the

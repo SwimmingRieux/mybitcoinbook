@@ -49,7 +49,7 @@ wallets, a transaction and block validation engine, tools for block construction
 of Bitcoin peer-to-peer communication.
 
 <<bitcoin_core_architecture>> shows the architecture of Bitcoin
-Core.
+Core. :noteforme:
 
 [[bitcoin_core_architecture]]
 .Bitcoin Core architecture (Source: Eric Lombrozo).

@@ -795,8 +795,9 @@ e739df2f899c49dc267c0ad280aca6dab0d2fa2b42a45182fc83e81713010000
 0000
 ----
 
-:noteforme:
-txid is same as transaction hash, it can change before being confirmed on blockchain.
+noteforme:
+txid and transaction hash are the same thing.
+txid can be changed before being confirmed on blockchain.
 
 [TIP]
 ====

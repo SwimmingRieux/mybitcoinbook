@@ -634,6 +634,7 @@ order to find the blockchain with the most proof of work and
 afterward continues to download the full blocks, validating them as it
 goes.
 
+noteforme:
 Once you are happy with the configuration options you have selected, you
 should add Bitcoin Core to the startup scripts in your operating system, so
 that it runs continuously and restarts when the operating system

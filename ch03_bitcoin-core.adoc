@@ -794,7 +794,7 @@ $ bitcoin-cli getrawtransaction 466200308696215bbc949d5141a49a41\
 e739df2f899c49dc267c0ad280aca6dab0d2fa2b42a45182fc83e81713010000
 0000
 ----
-
+:noteforme:
 [TIP]
 ====
 A transaction ID (txid)

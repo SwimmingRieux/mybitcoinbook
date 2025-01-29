@@ -989,6 +989,15 @@ encoding.  They are now known as legacy addresses and have become less
 common over time.
 Legacy addresses were supplanted by the bech32 family of ((("redeem scripts", startref="redeem-script")))addresses.
 
+noteforme:
+In a P2SH transaction with a 2-of-2 multisig redeem script, when Bitcoin full nodes execute the script, the stack looks like this before execution:
+<signature2> <signature1> <redeem_script> OP_HASH160 <script_hash> OP_EQUAL
+
+If the result of executing <redeem_script> OP_HASH160 <script_hash> OP_EQUAL> is 1, the stack then will look like this:
+<signature2> <signature1> <redeem_script>
+
+
+
 [[p2sh_collision_attacks]]
 .P2SH Collision Attacks
 ****

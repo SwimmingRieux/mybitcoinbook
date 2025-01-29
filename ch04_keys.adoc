@@ -304,7 +304,7 @@ noteforme:
 
 🔹 Trapdoor Function: A function that is easy to compute in one direction but can be reversed only with special knowledge (like a private key).
 🔹 One-Way Hash Function: A function that is easy to compute but impossible (or infeasible) to reverse without brute force.
-
+so basically, while you can produce a pubkey from a private key using a hash function, but you can't sign any message with it. signing is only the property of ECC.
 
 
 [TIP]

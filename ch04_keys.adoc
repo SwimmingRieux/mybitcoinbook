@@ -300,6 +300,13 @@ all possible values of _k_ (i.e., a brute-force search). Before we
 demonstrate how to generate a public key from a private key, let's look
 at elliptic curve cryptography in a bit more detail.
 
+:noteforme:
+
+🔹 Trapdoor Function: A function that is easy to compute in one direction but can be reversed only with special knowledge (like a private key).
+🔹 One-Way Hash Function: A function that is easy to compute but impossible (or infeasible) to reverse without brute force.
+
+
+
 [TIP]
 ====
 Elliptic curve multiplication is a type of function that cryptographers
@@ -542,6 +549,16 @@ can use a hash function to give us a cryptographically secure commitment
 to his public key.  If he later reveals his key, and we verify it
 produces the same commitment he previously gave us, we can be sure it
 was the exact same key that was used to create that earlier commitment.
+
+:noteforme:
+
+RIPEMD was used because it produces the shortest hashes whose uniqueness is still sufficiently assured. This allows Bitcoin addresses to be shorter.
+
+SHA256 is used as well because Bitcoin's use of a hash of a public key might create unique weaknesses due to unexpected interactions between RIPEMD and ECDSA (the public key signature algorithm). Interposing an additional and very different hash operation between RIPEMD and ECDSA makes it almost inconceivable that there might be a way to find address collisions that is significantly easier than brute force trying a large number of secret keys.
+
+Essentially, it was a belt and suspenders approach. Bitcoin had to do something unique and rather than have to hope they got it exactly right, they overdesigned it.
+
+
 
 The SHA256 hash function is considered to be very secure and produces
 256 bits (32 bytes) of output, less than half the size of original

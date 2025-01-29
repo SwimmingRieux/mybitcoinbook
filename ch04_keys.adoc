@@ -585,6 +585,8 @@ number:
 
 where _K_ is the public key and _A_ is the resulting commitment.
 
+noteforme: HASH160 is (SHA-256 followed by RIPEMD-160)
+
 Now that we understand how to make a commitment to a public key, we need
 to figure out how to use it in a transaction.  Consider the following
 output script:

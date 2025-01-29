@@ -300,7 +300,7 @@ all possible values of _k_ (i.e., a brute-force search). Before we
 demonstrate how to generate a public key from a private key, let's look
 at elliptic curve cryptography in a bit more detail.
 
-:noteforme:
+noteforme:
 
 🔹 Trapdoor Function: A function that is easy to compute in one direction but can be reversed only with special knowledge (like a private key).
 🔹 One-Way Hash Function: A function that is easy to compute but impossible (or infeasible) to reverse without brute force.
@@ -550,7 +550,7 @@ to his public key.  If he later reveals his key, and we verify it
 produces the same commitment he previously gave us, we can be sure it
 was the exact same key that was used to create that earlier commitment.
 
-:noteforme:
+noteforme:
 
 RIPEMD was used because it produces the shortest hashes whose uniqueness is still sufficiently assured. This allows Bitcoin addresses to be shorter.
 

@@ -969,6 +969,11 @@ base58check.  The version prefix is set to 5, which results in an
 encoded address starting with a +3+. An example of a P2SH address is
 +3F6i6kwkevjR7AsAd4te2YB2zZyASEm1HM+.
 
+noteform:
+In Base58, when the version byte is 0x05, the resulting address starts with "3".
+This is similar to how P2PKH addresses (with version 0x00) start with "1".
+
+
 [TIP]
 ====
 P2SH is not necessarily the same as a multisignature

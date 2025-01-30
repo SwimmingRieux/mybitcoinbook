@@ -1504,6 +1504,7 @@ keys.  Individual private keys could be exported or imported.  Any time
 new private keys were generated or imported, a new backup of the wallet
 needed to be created.
 
+noteforme:
 Later Bitcoin wallets began using deterministic wallets where all
 private keys are generated from a single seed value.  These wallets only
 ever need to be backed up once for typical onchain use.  However, if a

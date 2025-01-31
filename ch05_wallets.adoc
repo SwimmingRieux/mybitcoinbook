@@ -1147,6 +1147,8 @@ parent key can have 2,147,483,647 (2^31^) children (2^31^ is half of the
 entire 2^32^ range available because the other half is reserved for a
 special type of derivation we will talk about later in this chapter).
 
+noteforme:Each parent key can have 2,147,483,647 (231) children.
+
 Repeating the process one level down the tree, each child can in turn
 become a parent and create its own children, in an infinite number of
 generations.

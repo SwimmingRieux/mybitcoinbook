@@ -1442,6 +1442,8 @@ letter _h_.  For situations, such as in output script descriptors, where
 text may be used in a shell or other context where a single apostrophe
 has special meaning, using the letter _h_ is ((("private child key derivation", "hardened derivation", startref="private-child-harden")))((("child key pair derivation", "hardened derivation", startref="child-key-pair-harden")))((("hardened child key derivation", startref="harden-child-key")))recommended.
 
+noteforme: Instead of showing a large number like 2147483648 for the first hardened key, we display it as 0' (or 0h). Similarly, 2147483649 becomes 1', and so on.
+
 ===== HD wallet key identifier (path)
 
 Keys in ((("path references in HD wallets")))((("key generation", "HD (hierarchical deterministic)", "path references")))((("HD (hierarchical deterministic) key generation", "path references")))an HD wallet are

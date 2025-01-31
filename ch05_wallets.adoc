@@ -1102,6 +1102,10 @@ creates child keys from parent keys, as we will see in the next section.
 
 ===== Private child key derivation
 
+noteforme: a good explaination can be found here: https://bitcoin.stackexchange.com/a/41598
+noteforme: so basically if you loose one of your private keys, the others would be safe.
+noteforme: the reason we use HMAC function is because 
+
 HD wallets ((("key generation", "HD (hierarchical deterministic)", "private child key derivation", id="keygen-hd-private-child")))((("HD (hierarchical deterministic) key generation", "private child key derivation", id="hd-keygen-private-child")))((("private child key derivation", id="private-child")))((("child key pair derivation", "private keys", id="child-key-pair-private")))use a _child key derivation_ (CKD)
 function to derive child keys from parent keys.
 

@@ -1375,6 +1375,8 @@ software, such as the widely used open source BTCPay Server.
 
 ===== Hardened child key derivation
 
+noteforme: in the previous noteformes we came to the conclusion that chaincode is necessay because if someone knows one of our private keys, would be able to derive all the other private keys. in the normal deriviation of pubkeys we have our chaincode on an online server(definetly private but it can get hacked), so now if someone knows one of our private keys and hack our chaincode, they would be able to derive all the other pr_keys. the hardened deriviation is differennt. because the formula is to use parent_private_key+chaincode+index rather than parent_public_key+chaincode+index. so now if someone knows one of our private keys and they also know our chaincode, they can't get all of our pr_keys. they can only know all the private keys in the subtree with the root that has used hardened deriviation. so you can make a hardened public key once at a while and give it to your server for generating its subtree, and its parents won't be in danger anymore.
+
 The ((("private child key derivation", "hardened derivation", id="private-child-harden")))((("child key pair derivation", "hardened derivation", id="child-key-pair-harden")))((("hardened child key derivation", id="harden-child-key")))ability to derive a branch
 of public keys from an xpub is very useful, but it comes with a
 potential risk. Access to an xpub does not give access to child private

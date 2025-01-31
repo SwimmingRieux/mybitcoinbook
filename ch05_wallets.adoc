@@ -745,6 +745,8 @@ BIP39 was proposed by the company behind the Trezor hardware wallet and
 is compatible with many other wallets applications, although certainly
 not all.
 
+noteforme: the two below pictures are extremely important.
+
 BIP39 defines the creation of a recovery code and seed, which we
 describe here in nine steps. For clarity, the process is split into two
 parts: steps 1 through 6 are shown in <<generating_recovery_words>> and

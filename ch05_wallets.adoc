@@ -1102,9 +1102,9 @@ creates child keys from parent keys, as we will see in the next section.
 
 ===== Private child key derivation
 
-noteforme: a good explaination can be found here: https://bitcoin.stackexchange.com/a/41598
-noteforme: so basically if you loose one of your private keys, the others would be safe.
-noteforme: the reason we use HMAC function is because 
+noteforme: a good explaination can be found here: https://bitcoin.stackexchange.com/a/41598 \n
+noteforme: so basically if you loose one of your private keys, the others would be safe. \n
+noteforme: the reason we use HMAC-SHA512 function is this: we use SHA512 because we want to get a chaincode as entropy, because without it, one can derive all the private keys if they only find one of the private keys. so we need 51, left 256 ones are special integer, and the right 256 ones are chaincode. 
 
 HD wallets ((("key generation", "HD (hierarchical deterministic)", "private child key derivation", id="keygen-hd-private-child")))((("HD (hierarchical deterministic) key generation", "private child key derivation", id="hd-keygen-private-child")))((("private child key derivation", id="private-child")))((("child key pair derivation", "private keys", id="child-key-pair-private")))use a _child key derivation_ (CKD)
 function to derive child keys from parent keys.

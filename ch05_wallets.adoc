@@ -556,6 +556,8 @@ the deterministic key derivation algorithm
 (e.g., BIP32)—it also requires knowing what paths in the tree of keys
 your wallet application used for generating the specific keys it distributed.
 
+noteforme: it also requires knowing what paths in the tree of keys your wallet application used for generating the specific keys it distributed.
+
 Two solutions to this problem have been adopted.  The first is using
 standard paths.  Every time there's a change related to the addresses
 that wallet applications might want to generate, someone creates a BIP

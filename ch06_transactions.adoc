@@ -255,6 +255,8 @@ unsigned integers:
 ++++
 ****
 
+noteforme: checkout variable length ints here: https://github.com/SwimmingRieux/bitcoinbook/blob/develop/ch06_transactions_var_int.md
+
 Each input in a transaction must contain three fields: an _outpoint_ field, a length-prefixed _input script_ field, and a _sequence_
 
 We'll look at each of those fields in the following sections.  Some

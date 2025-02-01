@@ -330,6 +330,13 @@ time a new block of transactions arrives, all of the outputs they spend
 are removed from the UTXO database and all of the outputs they create
 are added to the((("transactions", "inputs", "outpoint field", startref="transaction-input-outpoint")))((("inputs", "outpoint field", startref="input-transaction-outpoint")))((("outpoint field (transaction inputs)", startref="outpoint"))) database.
 
+noteforme: a bitcoin node keeps a
+database that stores every UTXO and
+essential metadata about it (like its confirmation block height).  Each
+time a new block of transactions arrives, all of the outputs they spend
+are removed from the UTXO database and all of the outputs they create
+are added to the((("transactions", "inputs", "outpoint field", startref="transaction-input-outpoint")))((("inputs", "outpoint field", startref="input-transaction-outpoint")))((("outpoint field (transaction inputs)", startref="outpoint"))) database.
+
 [[internal_and_display_order]]
 .Internal and Display Byte Orders
 ****

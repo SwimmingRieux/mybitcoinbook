@@ -525,6 +525,9 @@ objected to adding support for transaction replacement back into Bitcoin
 Core, so a compromise was reached that once again used the sequence
 field in support of replacement.
 
+noteforme: Some users and businesses
+objected because they used to accept unconfirmed transactions(in mempool) as payment of their costumers. but after RBF was proposed, people could invalidate their previous unconfirmed transaction by a new one to someone else, thuse leading to double-spending problem.
+
 As documented in BIP125, an unconfirmed transaction with any input that
 has a sequence set to a value below 0xfffffffe (i.e., at least 2 below
 the maximum value) signals to the network that its signer wants it to be

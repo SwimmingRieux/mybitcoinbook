@@ -384,6 +384,10 @@ appears within transactions and blocks.  We use _display byte order_ for
 the form displayed to users.  Another set of common terms is
 _little-endian byte order_ for the internal version and _big-endian byte
 order_ for the display version.
+
+noteforme: Another set of common terms is
+_little-endian byte order_ for the internal version and _big-endian byte
+order_ for the display version.
 ****
 
 ==== Input Script

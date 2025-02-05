@@ -1114,6 +1114,12 @@ Some of the special rules for coinbase transactions include:
   prefixed by a data-pushing opcode.  Since a 2013 soft fork defined in
   BIP34, the first few bytes of this field must follow additional rules
   we'll describe in <<duplicate_transactions>>.
+-- noteforme:
+---"This script is not executed" → The coinbase field in a coinbase transaction is not executed like a normal script. Instead, it serves as a place where miners can include arbitrary data, such as extra nonce values, miner tags, or signaling information.
+
+---"Legacy transaction limits on sigops do apply" → Even though the coinbase script is not executed, old Bitcoin rules still enforce limits on the number of signature operations ("sigops") inside transactions. This means that certain script patterns could still affect validation.
+
+---"Any arbitrary data placed in it should be prefixed by a data-pushing opcode" → If miners want to include arbitrary data in the coinbase field, they should use an opcode like OP_PUSH to explicitly mark the data as non-executable. This prevents the script from accidentally being interpreted as something that violates legacy sigop limits.
 
 - The sum of the outputs must not exceed the value of the fees collected
   from all the transactions in that block plus the subsidy.  The subsidy

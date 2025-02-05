@@ -1,6 +1,8 @@
 [[c_transactions]]
 == Transactions
 
+noteforme: for a quick recap, just take a look at pictures of this chapter, and read quickly what does each file do. also take this in mind, the witness data, is the data provided by the spender as a prrof that shows the nodes and miners that the spender is actually the owner of the output script.
+
 The way we typically transfer physical cash has little resemblance to
 the way we transfer bitcoins.  Physical cash is a bearer token.  Alice
 pays Bob by handing him some number of tokens, such as dollar bills.

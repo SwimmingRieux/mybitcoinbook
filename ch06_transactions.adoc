@@ -1185,6 +1185,8 @@ reduce the weight used when spending a UTXO.  This helps discourage the
 creation of uneconomical outputs as described in
 <<uneconomical_outputs>>.
 
+noteforme: how did segwit increased the block size and also dis-incentivized the uneconomical outputs
+
 ++++
 <table id="weight_factors">
 <caption>Weight factors for all fields in a Bitcoin transaction</caption>
